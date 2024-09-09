@@ -1,7 +1,7 @@
 # Define the AWS provider for the us-east-1 region
 provider "aws" {
-  alias  = "us_east_1"
-  region = "us-east-1"
+  alias  = "primary"
+  region = var.aws_region
 }
 
 # Create an ACM certificate in the us-east-1 region
