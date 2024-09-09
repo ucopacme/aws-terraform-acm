@@ -13,3 +13,9 @@ variable "zone_id" {
   description = "The Route 53 zone ID where DNS validation records should be created"
   type        = string
 }
+
+variable "tags" {
+  description = "Tags to apply to resources"
+  type        = map(string)
+  default     = {}
+}
