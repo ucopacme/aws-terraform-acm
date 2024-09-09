@@ -3,6 +3,12 @@ variable "domain_name" {
   type        = string
 }
 
+# Define the variable for region
+variable "aws_region" {
+  description = "AWS region to deploy resources in"
+  default     = "us-west-2"
+}
+
 variable "subject_alternative_names" {
   description = "List of alternative domain names for the ACM certificate"
   type        = list(string)
