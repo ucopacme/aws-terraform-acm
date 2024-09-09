@@ -6,6 +6,7 @@ variable "domain_name" {
 # Define the variable for region
 variable "region" {
   description = "AWS region to deploy resources in"
+  type        = string
   
 }
 
