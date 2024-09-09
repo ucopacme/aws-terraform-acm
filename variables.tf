@@ -6,7 +6,7 @@ variable "domain_name" {
 # Define the variable for region
 variable "region" {
   description = "AWS region to deploy resources in"
-  default     = "us-west-2"
+  default     = ""
 }
 
 variable "subject_alternative_names" {
