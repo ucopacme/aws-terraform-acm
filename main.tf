@@ -7,7 +7,6 @@ provider "aws" {
 # Create an ACM certificate in the us-east-1 region
 resource "aws_acm_certificate" "this" {
   provider                = aws.primary
-  region                  = var.region
   domain_name             = var.domain_name
   subject_alternative_names = var.subject_alternative_names
   validation_method       = "DNS"
